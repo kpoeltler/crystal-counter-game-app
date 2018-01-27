@@ -1,0 +1,33 @@
+
+.customButton {     
+	display: inline-block; 
+	width: 80px; 
+	height: 80px; 
+	color: #200233; 
+	background: -webkit-linear-gradient(#ECCEF3,#DC94EB,#DC94EB,#BD23D4);
+	background: linear-gradient(#ECCEF3,#DC94EB,#DC94EB,#BD23D4);
+	border: 6px solid #340458; 
+	border-radius: 3px; 
+} 
+.jumbotron {
+	color: #200233; 
+	background: -webkit-linear-gradient(#ECCEF3,#DC94EB,#DC94EB,#BD23D4);
+	background: linear-gradient(#ECCEF3,#DC94EB,#DC94EB,#BD23D4);
+	border: 6px solid #340458; 
+	border-radius: 3px;
+}
+
+
+#button-green {
+	
+	 
+
+}
+
+h3 {
+	color: rgb(48, 3, 48);
+}
+
+#total {
+	background-color: rgb(130, 243, 243);
+}
