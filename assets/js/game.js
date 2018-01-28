@@ -1,3 +1,7 @@
+var theCanvas = document.getElementById("theCanvas");   // for drawing the projectile
+        var theContext = theCanvas.getContext("2d");
+
+
 var target = function getRndInteger(min, max) {
   return Math.floor(Math.random() * (120 - 19)) + 19;
 }
@@ -31,7 +35,15 @@ var updateScore = function (){
 	};
 
  
-
+	function init() {
+		var can = document.getElementById("can");
+		var ctx = can.getContext("2d");
+		ctx.fillStyle = "white";
+		ctx.fillRect(25,25,120,100);
+		ctx.font = "24pt Helvetica";
+		ctx.fillStyle = "black";
+		ctx.fillText("Notice:", 30, 55);
+}
 // 	parse string to num userScore += $(this).data("")
 // 	if userScore > target 
 // 		display "Lost"
