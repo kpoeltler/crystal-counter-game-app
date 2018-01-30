@@ -7,12 +7,6 @@ body {
 	margin-right: auto;
 }
 
-
-
-
-
-
-
 .customButton {     
      /* style a link as a push-button */
     display: inline-block; 
@@ -50,8 +44,6 @@ body {
 	border: 6px solid #340458; 
 	border-radius: 3px;
 }
-
-
 
 h3 {
 	color: rgb(48, 3, 48);

@@ -3,27 +3,17 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Crystal ame</title>
-
-
-
-	<!-- Added a link to Bootstrap-->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-	  crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 	<title>Crystal Game</title>
 
 </head>
 
-		<body onload="init()">
-				
-		
-	<!-- Jumbotron for Title -->
-	<div class="jumbotron">
+		<body>
 		<h1 class="text-center">Crystal Game</h1>
 
-	</div>
+	
 	<!-- <p>Simple CSS hover icons by Joacim Nilsson</p>
 		<div id="icons">
 			<ico class="jn-upload"><n></n></ico>
@@ -33,18 +23,56 @@
 		</div> -->
 	<!-- Crystal Panel -->
 	
-		<div class="col-lg-12">
-				<div id="crystals buttonBackground">
-					<button class="customButton">
-						<img src="assets/images/ruby.jpg" />
-					</button>
-					<button class="customButton">
+		
+	<!-- <div class="w3-container">
+			<h2>Game Buttons</h2> -->
+			
+			<body onload="startGame()">
+					<script>
+					
+					function startGame() {
+							myGameArea.start();
+					}
+					
+					var myGameArea = {
+							canvas : document.createElement("canvas"),
+							start : function() {
+									this.canvas.width = 480;
+									this.canvas.height = 270;
+									this.context = this.canvas.getContext("2d");
+									document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+							}
+					}
+					//local storage
+					//firebase it is a real time database it works well with react similar to mongo 
+					// wednesday github collaboration
+					//agile methodology-workflow, waterfall the alternate
+					//organizing workflow and code mvp-wireframingof ui then flowchart feature dump
+					//
+
+					</script>
+					
+					</body>
+					</html>
+						
+	
+					
+
+					
+						
+										 <!-- make an id for each button	and then add individual click listeners	 -->
+							
+							</button>
+					<button id="crystal1" class="customButton crystal">
 						<img src="assets/images/purple.jpg" />
 					</button>
-					<button class="customButton">
+					<button class="customButton crystal">
 						<img src="assets/images/black.gif" />
 					</button>
-					<button class="customButton">
+					<button class="customButton crystal">
+						<img src="assets/images/blue.jpg" />
+					</button>
+					<button class="customButton crystal">
 						<img src="assets/images/blue.jpg" />
 					</button>
 				</div>
@@ -55,9 +83,7 @@
 		
 		
 			<!--Total Box-->
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
+		
 						<div id="target">
 							<h3>Target</h3>
 						</div>
@@ -67,11 +93,10 @@
 					<h3>User Score</h>
 				</div>
 			</div>
-			<canvas id="crystals" height="800" width="800"></canvas>
-		
-</body>
+			
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="assets/javascript/game.js">
+<script type="text/javascript" src="assets/js/game.js">
 </script>
 
 </body>
