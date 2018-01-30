@@ -1,4 +1,4 @@
-
+//--------------------Psuedo Code-------------------------created on Saturday w/class-------
 // +++var target = math.floor(math.random between 19-120
 // +++var crystal1, var crystal2, var crystal3, var crystal4 all get random number between 1-12
 // +++var userScore = 0
@@ -23,9 +23,7 @@
 // 	 };
 //  }
 
-//---------------------If I have time----------------------
-//make an array to hold all the crystals
-//
+
 
 var userScore = 0;
 var target = Math.floor(Math.random() * (100 + 19) +19 );
@@ -75,7 +73,7 @@ $("#crystal4").on("click",function(){
 	console.log (userScore);
 	winCheck();
 });
-//---------------tonight---------------
+//---------------TONIGHT----------------------------------------------------------
 //_______________if I have time learn to group fxns-----------
 // var updateScore = function (){
 // 	$(this).val();  //google userScore += num
@@ -91,4 +89,33 @@ function winCheck(){
 ///apply the other elements to the crystals and create a display function replace console.log with the display fxn
 //if you lose reset the game change the target and crystal values
  
+//---------------------If I have time----------------------------------------------
+//make an array to hold all the crystals
+//
 
+
+
+//-------------------------------------Game Things I Found On Google----------------
+//<body onload="startGame()">
+	// <script>
+	// function startGame() {
+	// 		myGameArea.start();
+	// }
+	
+	// var myGameArea = {
+	// 		canvas : document.createElement("canvas"),
+	// 		start : function() {
+	// 				this.canvas.width = 480;
+	// 				this.canvas.height = 270;
+	// 				this.context = this.canvas.getContext("2d");
+	// 				document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+	// 		}
+	// }
+	//local storage
+	//firebase it is a real time database it works well with react similar to mongo 
+	// wednesday github collaboration
+	//agile methodology-workflow, waterfall the alternate
+	//organizing workflow and code mvp-wireframingof ui then flowchart feature dump
+	//
+
+	
