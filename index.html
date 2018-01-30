@@ -5,99 +5,49 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 	<title>Crystal Game</title>
-
 </head>
 
-		<body>
-		<h1 class="text-center">Crystal Game</h1>
-
-	
-	<!-- <p>Simple CSS hover icons by Joacim Nilsson</p>
-		<div id="icons">
-			<ico class="jn-upload"><n></n></ico>
-			<ico class="jn-download"><n></n></ico>
-			<ico class="jn-list"><n></n></ico>
-			<ico class="jn-sun"><n></n></ico>
-		</div> -->
+<body>
+	<h1 class="text-center">Crystal Game</h1>
+	<hr>
 	<!-- Crystal Panel -->
-	
-		
-	<!-- <div class="w3-container">
-			<h2>Game Buttons</h2> -->
-			
-			<body onload="startGame()">
-					<script>
-					
-					function startGame() {
-							myGameArea.start();
-					}
-					
-					var myGameArea = {
-							canvas : document.createElement("canvas"),
-							start : function() {
-									this.canvas.width = 480;
-									this.canvas.height = 270;
-									this.context = this.canvas.getContext("2d");
-									document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-							}
-					}
-					//local storage
-					//firebase it is a real time database it works well with react similar to mongo 
-					// wednesday github collaboration
-					//agile methodology-workflow, waterfall the alternate
-					//organizing workflow and code mvp-wireframingof ui then flowchart feature dump
-					//
+	<!-- add individual click listeners -->
+	<div id="crystalPanel">
+		<button id="crystal1" class="customButton crystal">
+			<img src="assets/images/purple.jpg" />
+		</button>
+		<button id="crystal2" class="customButton crystal">
+			<img src="assets/images/black.gif" />
+		</button>
+		<button id="crystal3" class="customButton crystal">
+			<img src="assets/images/blue.jpg" />
+		</button>
+		<button id="crystal4" class="customButton crystal">
+			<img src="assets/images/blue.jpg" />
+		</button>
+	</div>
+	<br>
+	<br>
 
-					</script>
-					
-					</body>
-					</html>
-						
-	
-					
+	<!--Target Box-->
 
-					
-						
-										 <!-- make an id for each button	and then add individual click listeners	 -->
-							
-							</button>
-					<button id="crystal1" class="customButton crystal">
-						<img src="assets/images/purple.jpg" />
-					</button>
-					<button class="customButton crystal">
-						<img src="assets/images/black.gif" />
-					</button>
-					<button class="customButton crystal">
-						<img src="assets/images/blue.jpg" />
-					</button>
-					<button class="customButton crystal">
-						<img src="assets/images/blue.jpg" />
-					</button>
-				</div>
-			</div>
-		
-			<br>
-			<br>
-		
-		
-			<!--Total Box-->
-		
-						<div id="target">
-							<h3>Target</h3>
-						</div>
-					</div>
-				</div>
-				<div id="userScore" class="col-md-6">
-					<h3>User Score</h>
-				</div>
-			</div>
-			
+	<div id="target">
+		<h3>Target</h3>
+	</div>
+	</div>
+	</div>
+	<div id="userScore" class="col-md-6">
+		<h3>User Score</h>
+	</div>
+	</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/game.js">
-</script>
+
+
+	<!--JS LINKS-->
+	<script typle="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/game.js">
+	</script>
 
 </body>
 
