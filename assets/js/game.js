@@ -76,6 +76,7 @@ function winCheck(){
 	console.log ("you lost");
 	} else if (userScore === target) {
 		console.log (" you win");
+	
 	}
 }
 ///apply the other elements to the crystals and create a display function replace console.log with the display fxn
