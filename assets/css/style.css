@@ -9,6 +9,12 @@ body {
 	margin-right: auto;
 }
 
+header {
+	width: 600px;
+	height: 100px;
+	text-align: center;
+	padding-top: 50px;
+}
 .customButton {     
      /* style a link as a push-button */
     display: inline-block; 
@@ -48,9 +54,14 @@ body {
 }
 
 h3 {
-	color: rgb(48, 3, 48);
+	color: rgb(32, 2, 32);
+	font-size: 30px
 }
 
 #target {
 	background-color: rgb(130, 243, 243);
+	color: rgb(32, 2, 32);
+}
+h1 {
+	color: rgb(32, 2, 32);
 }
