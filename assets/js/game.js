@@ -7,13 +7,6 @@
 // 	$(this).val();};
 
 // }
-//  Option:
-//  var crystalArr = [13,9,4,7]
-
-//  var id = $(this).data (num, crystal1);
-//  //--------------
-//  var updateScore = function(){
-// 	 var num = $(this). to access associated # - number SVGFEMorphologyElement
 // 	 userScore += crystal1/2/3/4
 // 	 if (userScore > targetScore) {
 // 		 display ("lose"; GOOGLE
@@ -22,7 +15,6 @@
 // 		 display ("winner";)
 // 	 };
 //  }
-
 
 
 var userScore = 0;
@@ -46,10 +38,10 @@ console.log (crystal1, crystal2, crystal3, crystal4 );
 
 
 // //---------- Add click listener-----------
-var game = function (){
-//put the whole game in here
+// var game = function (){
+// //put the whole game in here
 
-};
+// };
 
 
 $("#crystal1").on("click",function(){
