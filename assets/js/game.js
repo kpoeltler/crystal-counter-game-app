@@ -43,7 +43,7 @@ console.log (crystal1, crystal2, crystal3, crystal4 );
 
 // };
 
-
+$("#targetNumber").text(target);
 $("#crystal1").on("click",function(){
 	userScore += crystal1
 	console.log (userScore);
@@ -72,10 +72,11 @@ $("#crystal4").on("click",function(){
 	//in each block of code userScore += the crystal1/2/3/4/
 
 function winCheck(){
+	$("#userSum").text(userScore);
 	if (userScore > target) {
-	console.log ("you lost");
+	$("#result").text("you lost");
 	} else if (userScore === target) {
-		console.log (" you win");
+		$("#result").text("you win");
 	
 	}
 }
