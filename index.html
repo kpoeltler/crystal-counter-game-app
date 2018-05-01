@@ -3,70 +3,69 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Crystal ame</title>
-
-
-
-	<!-- Added a link to Bootstrap-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-	  crossorigin="anonymous">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 	<title>Crystal Game</title>
-
 </head>
 
 <body>
-	<!-- Jumbotron for Title -->
-	<div class="jumbotron">
-		<h1 class="text-center">Crystal Game</h1>
-
-	</div>
-	<!-- <p>Simple CSS hover icons by Joacim Nilsson</p>
-		<div id="icons">
-			<ico class="jn-upload"><n></n></ico>
-			<ico class="jn-download"><n></n></ico>
-			<ico class="jn-list"><n></n></ico>
-			<ico class="jn-sun"><n></n></ico>
-		</div> -->
+	<header>
+		<h1>Crystal Game</h1>
+	</header>
+	
+	<hr>
 	<!-- Crystal Panel -->
-	<div class="col-lg-6">
-		<div>
-			<button id="button-purple" value="3">
-				<img class="customButton cyrstal" src="assets/Images/amethyst.jpg" />
-			</button>
-			<button id="button-white" value="5">
-				<img class="customButton crystal" src="assets/Images/diamond.png" />
-			</button>
-			<button id="button-green" value="7">
-				<img class="customButton crystal" src="assets/Images/emerald.jpg" />
-			</button>
-			<button id="button-red" value="9">
-				<img class="customButton crystal" src="assets/Images/ruby.png" />
-			</button>
-		</div>
-		<br>
-		<br>
+	<!-- add individual click listeners -->
+	<div id = "buttonBackground">
+		<button id="crystal1" class="customButton crystal">
+			<img src="assets/images/crystal1.png" />
+		</button>
+		<button id="crystal2" class="customButton crystal">
+			<img src="assets/images/crystal2.png" />
+		</button>
+		<button id="crystal3" class="customButton crystal">
+			<img src="assets/images/crystal3.png" />
+		</button>
+		<button id="crystal4" class="customButton crystal">
+			<img src="assets/images/crystal4.png" />
+		</button>
 	</div>
+	<br>
+	<br>
 
-	<!--Total Box-->
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6">
-				<div id="target">
-					<h3>Target</h3>
-				</div>
+	<!--Target Box-->
+
+	<div id="target">
+		<h3>Target</h3>
+		<div > <p id="targetNumber">
+			0
+		</p>
 			</div>
 		</div>
+	</div>
+	</div>
+	</div>
 	<div id="userScore" class="col-md-6">
-		<h3>User Score</h3>
+		<h3>User Score</h>
+			<div>
+				<p id="userSum">
+					0
+				</p>
+			</div>
+			<div>
+				<p id=result>
+					playing
+				</p>
+			</div>
 	</div>
 	</div>
-	
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="assets/javascript/game.js">
-</script>
+
+
+
+	<!--JS LINKS-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/game.js">
+	</script>
 
 </body>
 
