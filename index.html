@@ -8,13 +8,17 @@
 	<title>Crystal Game</title>
 </head>
 
-<body layout="column">
-
-
-
+<body>
+		<header>Cyrstal Counting Game</header>
+	<section class="grid-0">
+		
+<div class="grid-1">
+		<p>Use the crystals to match this target number</p>
+		<p id=result></p>
+	
+</div>
 	<!-- Crystal Panel -->
-	<!-- add individual click listeners -->
-	<md-toolbar layout="row" id="buttonBackground">
+	<div class="grid-2" id="buttonBackground">
 		<button id="crystal1" class="customButton crystal">
 			<img src="assets/images/crystal1.png" />
 		</button>
@@ -27,32 +31,20 @@
 		<button id="crystal4" class="customButton crystal">
 			<img src="assets/images/crystal4.png" />
 		</button>
-	</md-toolbar>
+	</div>
 
 	<!--Target Box-->
-	<div flex layout="row">
-			<h3>Use the crystals to match this target number</h3>
-		<p id=result>
-
-		</p>
+		
+<div class="grid-3">
+	<div id="targetNumber"><p>Target Number</p></div>
+	<div id="userSum">0</div>
+	<div id="target"></div> 
+	<div id="userScore"></div>
 </div>
-		<div flex layout="row">
-
-			
-<div id="targetNumber"></div>
-			<div id="target">
-			</div>
-			<div id="userScore">
-</div>
-
-			<div id="userSum">
-				0
-			</div>
-		</div>
 	
-		</div>
+		
 
-
+</section>
 		<!--JS LINKS-->
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="assets/js/game.js">

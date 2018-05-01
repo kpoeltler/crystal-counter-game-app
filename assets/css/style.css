@@ -1,137 +1,138 @@
-@import "compass/css3";
-
-.flex-container {
-  padding: 5px;
-  margin: 0;
-  list-style: none;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
-  
-  justify-content: space-around;
-}
-
 body {
-	padding:5px;
-	font-family: sans-serif;
-	font-size: 45px;
-	background: -webkit-linear-gradient(#ECCEF3,#DC94EB,#DC94EB,#BD23D4);
-  	background: linear-gradient(#ECCEF3,#DC94EB,#DC94EB,#BD23D4);
-	
-	width: auto;
-	margin-left: auto;
-	margin-right: auto;
-}
-
- 
-
-
-
-.customButton {     
-     /* style a link as a push-button */
-    /* display: inline-block;  */
-    width: auto; 
-    height: auto; 
-    background: -webkit-linear-gradient(#ECCEF3,#DC94EB,#DC94EB,#BD23D4);
-    background: linear-gradient(#ECCEF3,#DC94EB,#DC94EB,#BD23D4);
   
-    border: 2px solid #340458; 
-    border-radius: 5px;
-    -webkit-user-select: none;
-    -moz-user-select: -moz-none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: pointer;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  font-size: 45px;
+  background: -webkit-linear-gradient(#080808, #0d080e, #18101a, #050105);
+  background: linear-gradient(#161616, #0d080e, #18101a, #050105);
+
+  /* width: auto;
+	margin-left: auto;
+	margin-right: auto; */
 }
 
-	button {
-	outline: none;
-	border:none;
-	background-color: transparent;
+
+header {
+	color:#b7eefc;
+
+}
+.grid-1 {
+ padding: 20px; 
+  grid-template-columns: auto;
+  grid-template-rows:50px;
+  color: white;
+  font-size: 30px;
+  
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+}
+
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  /* color: white;
+  font-size: 20px;
+  padding: 5px; */
+}
+
+.customButton {
+  /* style a link as a push-button */
+  /* display: inline-block;  */
+  width: auto;
+  height: auto;
+  
+  background:-webkit-linear-gradient(#050413, #15192f, #1b2337, #09091d);
+
+  border: 2px solid #340458;
+  border-radius: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
 
 img:hover {
-	
-	animation: shake 0.52s cubic-bezier(.36,.07,.19,.97) both;
+  animation: shake 0.52s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 100px;
 }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
-  
-  20%, 80% {
+
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
 
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-4px, 0, 0);
   }
 
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(4px, 0, 0);
   }
 }
 
 #buttonBackground {
-	background: -webkit-linear-gradient(#ECCEF3,#DC94EB,#DC94EB,#BD23D4);
-    background: linear-gradient(#ECCEF3,#DC94EB,#DC94EB,#BD23D4);
-	background-color: rgba(59, 5, 70, 0.486);
-	border: none;
-	color: #5C0975;
+  background: -webkit-linear-gradient(#eccef3, #dc94eb, #dc94eb, #bd23d4);
+  background: linear-gradient(#eccef3, #dc94eb, #dc94eb, #bd23d4);
+  background-color: rgba(59, 5, 70, 0.486);
+  border: none;
+  color: #fee9ff;
 
-	text-align: center;
-	text-decoration: none;
-	/* display: inline-block; */
-	position: center;
-	font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  position: center;
 }
 
-h3 {
-	color: rgb(32, 2, 32);
-	font-size: 30px
+/* h3 {
+  color: rgb(32, 2, 32);
+  font-size: 30px;
+} */
+
+
+
+#targetNumber {
+  font-size: 45px;
+  text-align: center;
+  color: #fee9ff;
 }
 
 #target {
-	background-color: rgb(130, 243, 243);
-	color: rgb(32, 2, 32);
-	font-size: 45px;
-	width:600px;
-	height:100px;
-	
-	position:center;
 	text-align: center;
 }
-h1 {
-	color: rgb(32, 2, 32);
 
+#userSum {
+  background-color: rgb(1, 13, 17);
+  color: rgb(247, 242, 247);
+  font-size: 45px;
+  text-align: center;
 }
-
- .targetNumbers  {
-	font-size: 40px;
-
-}
-
- #userSum { 
-	
-	background-color: rgb(130, 243, 243);
-	color: rgb(32, 2, 32);
-	font-size: 45px;
-	width:600px;
-	height:100px;
-	
-	position:center;
-	text-align: center;
-} 
 
 #result {
-	font-size:100px;
+  font-size: 80px;
 }
