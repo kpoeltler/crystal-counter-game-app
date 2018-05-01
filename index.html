@@ -8,13 +8,13 @@
 	<title>Crystal Game</title>
 </head>
 
-<body class="flex-container">
-	
+<body layout="column">
+
 
 
 	<!-- Crystal Panel -->
 	<!-- add individual click listeners -->
-		<div class="flex-item" id="buttonBackground">
+	<md-toolbar layout="row" id="buttonBackground">
 		<button id="crystal1" class="customButton crystal">
 			<img src="assets/images/crystal1.png" />
 		</button>
@@ -27,39 +27,36 @@
 		<button id="crystal4" class="customButton crystal">
 			<img src="assets/images/crystal4.png" />
 		</button>
-	
+	</md-toolbar>
 
 	<!--Target Box-->
-	
-			<p id=result>
-				
-			</p>
-		
-	<div>
-	<h3>Use the crystals to match this target number</h3>
-	<div id="target">
-		<div>
-			<p id="targetNumber"></p>
-		</div>
-	</div>
-	</div>
-	
-	<div id="userScore">
-		
-			<div>
-				<p id="userSum">
-					0
-				</p>
+	<div flex layout="row">
+			<h3>Use the crystals to match this target number</h3>
+		<p id=result>
+
+		</p>
+</div>
+		<div flex layout="row">
+
+			
+<div id="targetNumber"></div>
+			<div id="target">
 			</div>
-			</div>
+			<div id="userScore">
 </div>
 
+			<div id="userSum">
+				0
+			</div>
+		</div>
+	
+		</div>
 
 
-	<!--JS LINKS-->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/game.js">
-	</script>
+		<!--JS LINKS-->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/game.js">
+		</script>
 
 </body>
 
