@@ -1,6 +1,6 @@
 @import "compass/css3";
 
-.container {
+.flex-container {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -19,11 +19,11 @@ body {
 	font-family: sans-serif;
 	font-size: 15px;
 	background: -webkit-linear-gradient(#ECCEF3,#DC94EB,#DC94EB,#BD23D4);
-  background: linear-gradient(#ECCEF3,#DC94EB,#DC94EB,#BD23D4);
+  	background: linear-gradient(#ECCEF3,#DC94EB,#DC94EB,#BD23D4);
 	
-	/* width: 600px;
+	width: 900px;
 	margin-left: auto;
-	margin-right: auto; */
+	margin-right: auto;
 }
 
 header {
@@ -33,14 +33,11 @@ header {
 	padding-top: 50px;
 }
 
-.flex-container {
-	display: flex; /* or inline-flex */
-  }
 
 
 .customButton {     
      /* style a link as a push-button */
-    display: inline-block; 
+    /* display: inline-block;  */
     width: auto; 
     height: auto; 
     background: -webkit-linear-gradient(#ECCEF3,#DC94EB,#DC94EB,#BD23D4);
@@ -64,7 +61,7 @@ header {
 
 #buttonBackground {
 	background: -webkit-linear-gradient(#ECCEF3,#DC94EB,#DC94EB,#BD23D4);
-  background: linear-gradient(#ECCEF3,#DC94EB,#DC94EB,#BD23D4);
+    background: linear-gradient(#ECCEF3,#DC94EB,#DC94EB,#BD23D4);
 	background-color: rgba(59, 5, 70, 0.486);
 	border: none;
 	color: #5C0975;
@@ -72,7 +69,7 @@ header {
 	text-align: center;
 	text-decoration: none;
 	/* display: inline-block; */
-	/* position: center; */
+	position: center;
 	font-size: 16px;
 }
 
@@ -87,5 +84,10 @@ h3 {
 }
 h1 {
 	color: rgb(32, 2, 32);
+
+}
+
+p .targetNumbers {
+	font-size: 25px;
 
 }
