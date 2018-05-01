@@ -81,13 +81,35 @@ h3 {
 #target {
 	background-color: rgb(130, 243, 243);
 	color: rgb(32, 2, 32);
+	font-size: 45px;
+	width:600px;
+	height:100px;
+	
+	position:center;
+	text-align: center;
 }
 h1 {
 	color: rgb(32, 2, 32);
 
 }
 
-p .targetNumbers {
-	font-size: 25px;
+ .targetNumbers  {
+	font-size: 40px;
 
+}
+
+ #userSum { 
+	
+	background-color: rgb(130, 243, 243);
+	color: rgb(32, 2, 32);
+	font-size: 45px;
+	width:600px;
+	height:100px;
+	
+	position:center;
+	text-align: center;
+} 
+
+#result {
+	font-size:100px;
 }

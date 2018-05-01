@@ -74,7 +74,7 @@ $("#crystal4").on("click",function(){
 function winCheck(){
 	$("#userSum").text(userScore);
 	if (userScore > target) {
-	$("#result").text("you lost");
+	$("#result").text("Aw, shoot!");
 	} else if (userScore === target) {
 		$("#result").text("you win");
 	
