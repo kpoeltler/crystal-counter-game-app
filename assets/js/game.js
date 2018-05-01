@@ -15,9 +15,18 @@
 // 		 display ("winner";)
 // 	 };
 //  }
+$(document).ready(function () {
+var resetCrystals = function(){
+	userScore = 0;
+	target = 0;
+}
+var startGame = function(){
+	target = 0;
+	userScore = 0;
+	
+	
+	$('#targetNumber').text(target);
 
-
-var userScore = 0;
 var target = Math.floor(Math.random() * (100 + 19) +19 );
 console.log(target);
 				 //doesn't work until I call it and put the min=19 and max=120
@@ -30,7 +39,9 @@ var crystal3 = Math.floor(Math.random() * (12 - 1)) + 1;
 
 var crystal4 = Math.floor(Math.random() * (12 - 1)) + 1;
 
-console.log (crystal1, crystal2, crystal3, crystal4 );
+
+
+
 // var targetScore; 
 // var updateScore;
 
@@ -65,6 +76,8 @@ $("#crystal4").on("click",function(){
 	console.log (userScore);
 	winCheck();
 });
+
+
 //---------------TONIGHT----------------------------------------------------------
 //_______________if I have time learn to group fxns-----------
 // var updateScore = function (){
@@ -74,12 +87,15 @@ $("#crystal4").on("click",function(){
 function winCheck(){
 	$("#userSum").text(userScore);
 	if (userScore > target) {
-	$("#result").text("Aw, shoot!");
+	$("#result").text("Aw, shoot!")
 	} else if (userScore === target) {
-		$("#result").text("you win");
+		$("#result").text("you win") 
 	
 	}
 }
+}
+startGame();
+})
 ///apply the other elements to the crystals and create a display function replace console.log with the display fxn
 //if you lose reset the game change the target and crystal values
  
@@ -111,5 +127,3 @@ function winCheck(){
 	//agile methodology-workflow, waterfall the alternate
 	//organizing workflow and code mvp-wireframingof ui then flowchart feature dump
 	//
-
-	
