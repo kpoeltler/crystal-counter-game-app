@@ -16,6 +16,12 @@ header {
 	text-align: center;
 	padding-top: 50px;
 }
+
+.container {
+	display: flex; /* or inline-flex */
+  }
+
+
 .customButton {     
      /* style a link as a push-button */
     display: inline-block; 
@@ -65,5 +71,5 @@ h3 {
 }
 h1 {
 	color: rgb(32, 2, 32);
->>>>>>> 64025b982b2ec64f151f0eb6afa04f6dc4efa5e3
+
 }
