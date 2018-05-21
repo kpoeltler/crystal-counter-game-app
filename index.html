@@ -2,10 +2,16 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<title>Crystal Game</title>
+	
+
+<title>Crystal Game</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/js/game.js"></script>
 </head>
 
 <body>
@@ -13,10 +19,12 @@
 	<section class="grid-0">
 		
 <div class="grid-1">
-		<p>Use the crystals to match this target number</p>
-		<p id=result></p>
-	
+		<p class="print">To play, click the crystals to add their values.</p>
+			<p class="print"> To win, match the target number.</p>
+		
 </div>
+
+
 	<!-- Crystal Panel -->
 	<div class="grid-2" id="buttonBackground">
 		<button id="crystal1" class="customButton crystal">
@@ -33,8 +41,9 @@
 		</button>
 	</div>
 
+
+
 	<!--Target Box-->
-		
 <div class="grid-3">
 	<div id="targetNumber"><p>Target Number</p></div>
 	<div id="userSum">0</div>
@@ -42,14 +51,10 @@
 	<div id="userScore"></div>
 </div>
 	
+<form action="">
+		<input type="reset" value="Reset" id="result">
+		</form>
 	</section>	
 
-
-		<!--JS LINKS-->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/js/game.js">
-		</script>
-
 </body>
-
 </html>
