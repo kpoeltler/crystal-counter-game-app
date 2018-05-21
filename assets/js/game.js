@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
 	var resetCrystals = function(){
 		userScore = 0;
@@ -68,6 +67,5 @@ $(document).ready(function () {
 	}
 	startGame();
 	});
-	
 	
 	
