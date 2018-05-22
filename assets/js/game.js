@@ -60,45 +60,17 @@ $(document).ready(function() {
 				alert("You Won!");
 				reload();
 				
-				
-
-				
-
-			// swal({
-			// 	title:"You won!",
-			// 	text: "Click Ok to play again",
-			// 	icon: "success",
-			// 	button:"OK!",
-			// })
 		} else {
 			if (userScore > target){
 				console.log("lost");
 				alert("You lost.");
 				reload(); 
 				
-			// 	swal({
-			// 	title:"You lost.",
-			// 	text: "Click Ok to play again",
-			// 	icon:"error",
-			// 	button:"OK!",
-			// })
-				
 			};
 
 		}
 	}
 }
-
-
-
-	// 	if (userScore > target) {
-	// 	$("#result").text("Aw, shoot!")
-	// 	$(":reset").css("background-color", "red");
-	// 	} else if (userScore === target) {
-	// 		$("#result").text("you win") 
-	// 		$(":reset").css("background-color", "red");
-		
-	// 	}
 	
 	startGame();
 	
